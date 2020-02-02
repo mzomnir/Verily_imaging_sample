@@ -10,8 +10,6 @@ We realized early on that, while the genomic labels for our raw (un-chunked) tra
 
 We have thus far evaluated training perfomance at the image-chunk level (rather than the whole-image or patient level), using the patient-level genomic label for every associated image chunk.  This approach will be affected by the aforementioned problem of some image sub-chunks containing little or no cancerous tissue.  Since our ultimate goal is to infer genotypes at the patient-level, rather than the whole-image or image-chunk level, our final model will contain a voting step that assigns a label to each whole-image based on a consensus of predictions on its image-chunks, followed by a final voting step that assigns a final patient-level label based on a consensus of the whole-images for the given patient.
 
-Lastly, a note on training data: while we are not able to publicly share our full image and label dataset, we have included some sample images and label data in this repo.  
-
 ## Prerequisites
 
 - Set up `data` directory in the root of the project with all training images in `data/original_images` and a csv version of Training_ML_clean.xlsb as `data/Training_ML_clean.csv`.
