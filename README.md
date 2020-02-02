@@ -1,6 +1,6 @@
 # Lung Cancer Mutation Detection
 
-This repo contains programs for training, evaluating, and applying a deep neural network for lung cancer mutation detection. Our goal is to infer genotype from phenotype: given a digitized slide scan image of cancerous lung tissue, infer whether the cancer contains mutations in a given gene (we start with KRAS and EGFR).
+This repo contains programs for training, evaluating, and applying a deep neural network for lung cancer mutation detection. Our goal is to infer genotype from phenotype: given a digitized slide scan image of cancerous lung tissue, infer whether the cancer contains mutations in a given gene (we start with KRAS and EGFR). All data is obtained from Massachusetts General Hospital's Center for Integrated Diagnostics and is not publicly available.  A small sample of data is included in this repo. 
 
 During preprocessing, we slice each image into multiple tiles ("chunks"), permute it (e.g. rotate, flip), and augment it (e.g. with active contouring).  We continue to experiment with new preprocessing techniques to improve training performance.
 
